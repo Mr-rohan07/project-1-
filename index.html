@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        color: rgb(217, 160, 68);
+        margin: 0%;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background: url('img/imgr8\ 7.50\ x\ 4.50.jpg');
+    }
+
+    .left {
+        /* border: 2px solid rgb(255, 0, 128); */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 1%;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(0, 234, 255);  */
+        display: block;
+        width: 80%;
+        margin: 12px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 3px;
+        /* border: 2px solid yellow; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-right: 25px;
+        position: relative;
+        left: 30%;
+        margin: 0%;
+        /* margin-top: 20px; */
+        /* margin-bottom: 0px; */
+    }
+
+    .navbar li a {
+        color: ivory;
+        text-decoration: underline;
+        /* padding: 0px 0px; */
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: 5px 6px;
+        color: white;
+        background-color: black;
+        border-radius: 4px;
+        border: 2px solid gray;
+        padding: 4px 14px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(53, 54, 49);
+    }
+
+    .container {
+        border: solid white;
+        margin: 45px 20px;
+        padding: 30px;
+        width: 40%;
+        /* float ka matlb hai jb sentense left main ho or apko right main krna ho float krna hai textalign se word hilta hai */
+        float: right;
+        border-radius: 25px;
+        display: block;
+        /* font-family: 'Times New Roman', Times, serif; */
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        /* font-family: fantasy; */
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: antiquewhite;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 5px auto;
+        border-radius: 4px;
+    }
+
+    .container button {
+        display: block;
+        width: 70%;
+        margin: 12px auto;
+        padding: 2px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .container h1 {
+        font-size: 23.12px;
+        color: rgb(166, 40, 29);
+        border-radius: 50px;
+        background-color: antiquewhite;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym-bg-logodumbell-logocrossfit-logofitness-logo-template_524159-21463-removebg-preview.png"
+                alt="">
+            <div>Rohan Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>🔥Join the best gym of Nagpur now💪</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
